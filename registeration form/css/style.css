@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+}
+body{
+    height: 753px;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    background-size: cover;
+    box-sizing: content-box;
+    background-attachment: fixed;
+    overflow: hidden;
+    position: relative;
+   
+}
+
+#main{
+    background:whitesmoke;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    height: 50%;
+    border-radius: 7px;
+    padding-top: 80px;
+}
+
+input[type=text], input[type=email], input[type=password], label{
+  display: block;
+  margin: auto;
+}
+
+label{
+    padding-left:40px;
+    font-size: 16px;
+    font-family: "Playfair Display";
+}
+input[type=text], input[type=email], input[type=password]{
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+    width: 80%;
+    height: 7%;
+    outline: none;
+    background: rgba(212, 211, 211, 0.507);
+}
+input[type=text]:focus{
+    box-shadow: 0 0 6pt 2pt #D3D3D3;
+   
+}
+input[type=email]:focus{
+    box-shadow: 0 0 5pt 2pt #D3D3D3;
+}
+input[type=password]:focus{
+    box-shadow: 0 0 5pt 2pt #D3D3D3;
+}
+#head{
+    text-align: center;
+    margin-bottom: 15px;
+}
+#checkbox{
+    margin-left: 45px;
+    margin-top: 15px;
+}
+#checkbox1{
+    margin-left: 45px;
+}
+span{
+    margin-left:5px;
+    font-size: 14px;
+}
+
+button{
+    border:none;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+    float: right;
+    margin-right: 15px;
+    height: 30px;
+    margin-top: 50px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+button:hover{
+    background: rgb(253, 241, 226);
+    box-shadow: 0px 8px 10px rgb(216, 205, 192);
+    color: black;
+    transform:translateY(-5px);
+    cursor: pointer;
+    cursor: not-allowed;
+}
+#policy{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
+a{
+    margin-left: 2px;
+}
+
+input.valid{
+    box-shadow: 0px 8px 10px rgb(95, 238, 142);
+}
+input.invalid{
+    box-shadow: 0px 8px 10px rgb(241, 155, 49);
+}
+
+
+
+
+/**************Media queries**************/
+
+@media only screen and (max-width: 500px){
+    #main{
+        width: 300px;
+        height: 50%;
+    }
+
+    button{
+        margin-right: 15px;
+        height: 30px;
+        margin-top: 10px;
+    }
+
+    #checkbox{
+        margin-left: 30px;
+    }
+    #checkbox1{
+        display: flexbox;
+        margin-left: px;
+    }
+    
+}
+
+
